@@ -3,6 +3,5 @@ def call(){
         git version
         python3 --version
         echo $HOSTNAME
-        service docker status
     '''
 }
