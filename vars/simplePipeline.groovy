@@ -1,8 +1,8 @@
 def call() {
     pipeline {
-        agent any
-        environment {
-            MODULE='m4'
+        agent docker {
+                image '...'
+              }
         }
         stages {
             stage('Verify') {                  
