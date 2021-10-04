@@ -1,9 +1,7 @@
 def call() {
     pipeline {
-        agent docker {
-                image '...'
-              }
-        }
+        agent any
+
         stages {
             stage('Audit Tools') {                  
                 steps {
