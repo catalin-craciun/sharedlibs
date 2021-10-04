@@ -7,8 +7,7 @@ def call() {
         stages {
             stage('Verify') {                  
                 steps {
-                    echo "Module: ${MODULE}"
-                    sh 'git version'
+                    auditTools()
                 }
             }
         }
