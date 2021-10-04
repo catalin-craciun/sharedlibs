@@ -2,6 +2,7 @@ def call(){
     sh '''
         export DOCKERID=catalin088
         docker container run \
+        --volume //var/run/docker.sock:/var/run/docker.sock \
         --detach \
         --publish 80:80 \
         --name linux_tweet_app \
