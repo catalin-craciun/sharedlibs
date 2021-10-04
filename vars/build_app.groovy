@@ -1,6 +1,6 @@
 def call(){
     sh '''
-        export DOCKERID=ctalin088
+        export DOCKERID=catalin088
         docker container run \
         --detach \
         --publish 80:80 \
