@@ -5,7 +5,7 @@ def call() {
               }
         }
         stages {
-            stage('Verify') {                  
+            stage('Audit Tools') {                  
                 steps {
                     auditTools()
                 }
