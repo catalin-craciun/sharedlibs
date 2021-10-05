@@ -13,7 +13,6 @@ def call() {
         stage("Build image") {
             steps {
                 buildImage()
-                return myapp
             }
         }
         stage("Push image") {
