@@ -1,10 +1,10 @@
+def call() {
+  pipeline {
+    agent any
 
-pipeline {
-  agent any
-
-  tools {
-    maven 'mvn-version'
-  }
+    tools {
+      maven 'mvn-version'
+    }
 
   stages {
     stage('Build') {
