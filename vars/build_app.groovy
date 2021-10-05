@@ -1,7 +1,6 @@
 def call(){
     sh '''
         export DOCKERID=catalin088
-        whoami
         docker container run \
         --volume //var/run/docker.sock:/var/run/docker.sock \
         --detach \
