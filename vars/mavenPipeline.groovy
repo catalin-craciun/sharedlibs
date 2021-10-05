@@ -29,9 +29,7 @@ pipeline {
                 script {
                   functionsmaven.pushImagemaven()
                 }
-               }
-          }
-     }
- }
-  
+        }
+    }
+  }
 }
