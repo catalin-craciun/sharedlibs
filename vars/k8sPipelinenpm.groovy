@@ -7,7 +7,9 @@ def call() {
     stages {
         stage("Checkout code") {
             steps {
-                checkout scm
+                script{
+                functionsnpm.checkCodenpm()
+              }
             }
         }
         stage("Build image") {
