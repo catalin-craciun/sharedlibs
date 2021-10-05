@@ -12,13 +12,17 @@ def call() {
         }
         stage("Build image") {
             steps {
+              script{
                 buildImage()
+              }
             }
         }
         stage("Push image") {
             steps {
+              script{
                 pushImage()
                 }
+            }
             }
   }        
 }
