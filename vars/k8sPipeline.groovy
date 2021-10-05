@@ -17,7 +17,7 @@ def call() {
         }
         stage("Push image") {
             steps {
-                pushImage()
+                pushImage(myapp)
                 }
             }
   }        
