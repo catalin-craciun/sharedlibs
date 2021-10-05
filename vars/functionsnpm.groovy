@@ -1,4 +1,4 @@
-def checkcodenpm(){
+def checkCodenpm(){
   checkout scm
 }
 
