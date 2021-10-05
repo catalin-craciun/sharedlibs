@@ -13,14 +13,14 @@ def call() {
         stage("Build image") {
             steps {
               script{
-                buildImage()
+                buildImage.call()
               }
             }
         }
         stage("Push image") {
             steps {
               script{
-                pushImage()
+                pushImage.call()
                 }
             }
             }
