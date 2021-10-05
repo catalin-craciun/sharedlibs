@@ -13,14 +13,14 @@ def call() {
         stage("Build image") {
             steps {
               script{
-                all.buildImagenpm()
+                functionsnpm.buildImagenpm()
               }
             }
         }
         stage("Push image") {
             steps {
               script{
-                all.pushImagenpm()
+                functionsnpm.pushImagenpm()
                 }
             }
             }
