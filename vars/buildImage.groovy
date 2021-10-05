@@ -1,3 +1,6 @@
 def call(){
-  myapp = sh(script: 'docker.build("catalin088/nodejs-test:${env.BUILD_ID}")', returnStdout: true)
+  script {
+    myapp = docker.build("jaganthoutam/nodejs-test:${env.BUILD_ID}")
+  }
+  return myapp;
 }
