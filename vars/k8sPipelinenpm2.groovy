@@ -8,7 +8,7 @@ def call() {
         stage("Checkout code") {
             steps {
                 script{
-                functionsnpm.checkCodenpm()
+                checkoutCodenpm()
               }
             }
         }
