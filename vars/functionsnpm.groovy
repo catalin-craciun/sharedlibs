@@ -1,6 +1,9 @@
+def checkcodenpm(){
+  checkout scm
+}
+
 def buildImagenpm(){
-  
-    myapp = docker.build("catalin088/nodejs-test:${env.BUILD_ID}")
+  myapp = docker.build("catalin088/nodejs-test:${env.BUILD_ID}")
 }
 
 def pushImagenpm() {
