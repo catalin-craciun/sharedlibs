@@ -1,3 +1,3 @@
 def myappMethod(){
-    myapp = docker.build("catalin088/nodejs-test:${env.BUILD_ID}")
+    myapp = docker.build("${DOCKER_ID}/nodejs-test:${env.BUILD_ID}")
 }
