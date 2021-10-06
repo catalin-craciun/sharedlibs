@@ -1,6 +1,5 @@
 def call() {
-    println new File(".").absolutePath
-    evaluate(new File("./buildImagenpm.groovy"))
+    evaluate(new File("../buildImagenpm.groovy"))
     buildimg = new buildImagenpm()
     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
       buildimg.myappMethod.push("latest")
