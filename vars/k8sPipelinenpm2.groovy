@@ -2,7 +2,8 @@ def call() {
   pipeline {
     agent any
     environment {
-        DOCKER_CRED = 'dockerhub'
+      DOCKER_CRED = 'dockerhub'
+      DOCKER_ID = 'catalin088'
     }
     stages {
         stage("Checkout code") {
