@@ -21,9 +21,7 @@ def call() {
         }
         stage("Push image") {
             steps {
-              script{
                 pushImagenpm()
-                }
             }
             }
   }        
