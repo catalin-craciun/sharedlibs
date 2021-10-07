@@ -1,6 +1,6 @@
 def call() {
     println(pwd())
-    evaluate(new File("./vars/buildImagenpm.groovy"))
+    evaluate(new File(pwd()+"/vars/buildImagenpm.groovy"))
     def buildimg = new buildImagenpm()
     docker.withRegistry('https://registry.hub.docker.com', "${DOCKER_CRED}") {
       buildimg.myappMethod.push("latest")
