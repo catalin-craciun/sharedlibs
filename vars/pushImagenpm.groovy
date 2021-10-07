@@ -1,5 +1,5 @@
 def call() {
-    println("build_id:${env.BUILD_ID}")
+    println(pwd())
     evaluate(new File("buildImagenpm.groovy"))
     def buildimg = new buildImagenpm()
     docker.withRegistry('https://registry.hub.docker.com', "${DOCKER_CRED}") {
