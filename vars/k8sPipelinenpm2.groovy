@@ -1,4 +1,5 @@
 def call() {
+  @Library('sharedlibs') _
   pipeline {
     agent any
     environment {
@@ -16,7 +17,8 @@ def call() {
         stage("Build image") {
             steps {
               script{
-                buildImagenpm.myappMethod()
+                //buildImagenpm.myappMethod()
+                hello("vasile")
               }
             }
         }
