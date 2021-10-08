@@ -1,4 +1,3 @@
-@Library('sharedlibs') _
 def call() {
     
     evaluate(new File("buildImagenpm.groovy"))
