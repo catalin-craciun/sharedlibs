@@ -1,3 +1,4 @@
+@Library('sharedlibs') _
 def call() {
   pipeline {
     agent any
