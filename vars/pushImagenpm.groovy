@@ -1,6 +1,7 @@
+@Library('sharedlibs') _
 def call() {
     
-    evaluate(new File("./buildImagenpm.groovy"))
+    evaluate(new File("/vars/buildImagenpm.groovy"))
     def buildimg = new buildImagenpm()
     docker.withRegistry('https://registry.hub.docker.com', "${DOCKER_CRED}") {
       buildimg.myappMethod().push("latest")
