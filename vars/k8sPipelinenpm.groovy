@@ -25,7 +25,14 @@ def call() {
                 functionsnpm.pushImagenpm()
                 }
             }
-            }
+        }
+      stage('Upload to S3'){
+        steps{
+          script{
+            uploadFilesToS3()
+          }      
+        }
+      }
   }        
 }
 }
