@@ -1,6 +1,10 @@
-def call(){
-  script{
-    sh 'aws cloudformation create-stack --stack-name EC2Jenkins --template-url https://test-bucket-10112021.s3.amazonaws.com/deployEC2.yml'
-  }
+def call(Map stageParams = [awsRegion: "us-east-1"]){
+  withAWS(region: stageParams.awsRegion, credentials:"${AWS_CRED}") {
+        awsIdentity()
+        cfnCreateChangeSet(
+          stack:'EC2Jenkins', 
+          changeSet:'my-change-set', 
+          url:'https://s3.amazonaws.com/my-templates-bucket/template.yaml'
+        ) 
 }
 
