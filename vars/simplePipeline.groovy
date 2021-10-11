@@ -8,7 +8,7 @@ def call() {
                     auditTools()
                 }
             }
-            stage('Build') {                  
+        stage('Build') {                  
                 steps {
                     build_app()
                 }
