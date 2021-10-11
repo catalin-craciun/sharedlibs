@@ -10,7 +10,7 @@ def call() {
                     uploadTemplateToS3()
                 }
             }
-        stage('Deploy EC2') {                  
+            stage('Deploy EC2') {                  
                 steps {
                     deployEC2()
                 }
