@@ -8,7 +8,7 @@ def call(Map stageParams = [awsRegion: "us-east-1"]){
         )
         cfnExecuteChangeSet(
           stack:'EC2Jenkins', 
-          changeSet:'my-change-set
+          changeSet:'my-change-set'
         )
   }
 }
