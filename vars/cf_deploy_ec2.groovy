@@ -3,14 +3,14 @@ def call() {
         agent any
 
         stages {
-            stage('Audit Tools') {                  
+            stage('Upload template to S3') {                  
                 steps {
-                    auditTools()
+                    uploadTemplateToS3()
                 }
             }
-        stage('Build') {                  
+        stage('Deploy EC2') {                  
                 steps {
-                    build_app()
+                    deployEC2()
                 }
             }
         }
