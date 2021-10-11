@@ -6,5 +6,5 @@ def call(Map stageParams = [awsRegion: "us-east-1"]){
           changeSet:'my-change-set', 
           url:'https://s3.amazonaws.com/my-templates-bucket/template.yaml'
         ) 
+  }
 }
-
