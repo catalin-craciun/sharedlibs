@@ -7,7 +7,7 @@ def call(Map stageParams = [awsRegion: "us-east-1"]){
           url:'https://testbucket-catalinc-13102021.s3.amazonaws.com/deployWordpress.yml'
         )
         cfnExecuteChangeSet(
-          stack:'Worspress', 
+          stack:'Wordpress', 
           changeSet:'my-change-set'
         )
   }
